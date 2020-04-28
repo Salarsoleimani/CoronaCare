@@ -1,0 +1,78 @@
+//
+//  EventType.swift
+//  CoronaCare
+//
+//  Created by Behrad Kazemi on 3/5/20.
+//  Copyright © 2020 BEKApps. All rights reserved.
+//
+
+import Foundation
+public enum EventType: Decodable {
+  case hands(HandsCareEvent)
+  case vitamineC(VitamineCEvent)
+  case mask(MaskEquipmentEvent)
+  case gloves(GlovesEquipmentEvent)
+  
+  public init(from decoder: Decoder) throws {
+    
+    let container = try decoder.singleValueContainer()
+    
+    if let element = try? container.decode(HandsCareEvent.self) {
+      self = .hands(element)
+      return
+    }
+    if let element = try? container.decode(VitamineCEvent.self) {
+      self = .vitamineC(element)
+      return
+    }
+    if let element = try? container.decode(MaskEquipmentEvent.self) {
+      self = .mask(element)
+      return
+    }
+    if let element = try? container.decode(GlovesEquipmentEvent.self) {
+      self = .gloves(element)
+      return
+    }
+    throw DecodingError.typeMismatch(EventType.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for EventType"))
+  }
+<<<<<<< HEAD
+  public func id() -> EventTypeId {
+    switch self {
+    case .hands(_):
+      return EventTypeId.hands
+    case .vitamineC(_):
+      return EventTypeId.vitamineC
+    case .mask(_):
+      return EventTypeId.mask
+    case .gloves(_):
+      return EventTypeId.gloves
+    }
+  }
+}
+public enum EventTypeId: Int {
+  case hands
+  case vitamineC
+  case mask
+  case gloves
+=======
+  public func asEventProtocol() -> EventProtocol {
+    var event: EventProtocol
+    switch self {
+    case let .hands(model):
+      event = model
+      break
+    case let .vitamineC(model):
+      event = model
+      break
+    case let .mask(model):
+      event = model
+      break
+    case let .gloves(model):
+      event = model
+      break
+    }
+    return event
+  }
+>>>>>>> d8d163e7047e7ec42f1d802c6ffefdfc1342ab05
+}
+

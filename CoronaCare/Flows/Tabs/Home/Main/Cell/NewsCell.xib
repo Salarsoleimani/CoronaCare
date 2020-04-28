@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCell" customModule="CoronaCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="321"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="321"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-Pj-nkX">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="321"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWQ-I9-mb2">
+                        <rect key="frame" x="0.0" y="195" width="314" height="126"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ExD-oM-R3c">
+                        <rect key="frame" x="8" y="203" width="298" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VirusCare" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ygs-pE-WDY">
+                                <rect key="frame" x="0.0" y="0.0" width="298" height="26.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmt-VS-7ir">
+                                <rect key="frame" x="0.0" y="34.5" width="298" height="59.5"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L52-hv-JCx">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="59.5"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7HJ-Gr-BFE">
+                                            <rect key="frame" x="0.0" y="0.0" width="298" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="VirusCare[13918:1437062] [Process] kill() returned unexpected" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOk-9f-PLJ">
+                                        <rect key="frame" x="8" y="5" width="282" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="L52-hv-JCx" secondAttribute="trailing" id="5HS-tq-Csb"/>
+                                    <constraint firstItem="L52-hv-JCx" firstAttribute="leading" secondItem="zmt-VS-7ir" secondAttribute="leading" id="Knf-dh-whm"/>
+                                    <constraint firstAttribute="bottom" secondItem="L52-hv-JCx" secondAttribute="bottom" id="L6L-K9-Y0M"/>
+                                    <constraint firstItem="jOk-9f-PLJ" firstAttribute="top" secondItem="zmt-VS-7ir" secondAttribute="top" constant="5" id="XFt-lU-huW"/>
+                                    <constraint firstAttribute="bottom" secondItem="jOk-9f-PLJ" secondAttribute="bottom" constant="16" id="izD-YZ-Cwo"/>
+                                    <constraint firstItem="jOk-9f-PLJ" firstAttribute="leading" secondItem="zmt-VS-7ir" secondAttribute="leading" constant="8" id="peu-Xa-Nlt"/>
+                                    <constraint firstItem="L52-hv-JCx" firstAttribute="top" secondItem="zmt-VS-7ir" secondAttribute="top" id="poq-6O-rUc"/>
+                                    <constraint firstAttribute="trailing" secondItem="jOk-9f-PLJ" secondAttribute="trailing" constant="8" id="zTl-kj-96e"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRq-8r-gTJ">
+                        <rect key="frame" x="16" y="167" width="73.5" height="24"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJS-Fb-cgY">
+                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="24"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CbT-Is-eoF">
+                                    <rect key="frame" x="0.0" y="0.0" width="73.5" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqO-Ji-g6B">
+                                <rect key="frame" x="8" y="4" width="57.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.39905286815068491" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uqO-Ji-g6B" firstAttribute="leading" secondItem="uRq-8r-gTJ" secondAttribute="leading" constant="8" id="1Je-02-p2K"/>
+                            <constraint firstItem="PJS-Fb-cgY" firstAttribute="leading" secondItem="uRq-8r-gTJ" secondAttribute="leading" id="C8E-4v-o0L"/>
+                            <constraint firstAttribute="bottom" secondItem="PJS-Fb-cgY" secondAttribute="bottom" id="Lij-6C-AoU"/>
+                            <constraint firstItem="uqO-Ji-g6B" firstAttribute="top" secondItem="uRq-8r-gTJ" secondAttribute="top" constant="4" id="M6o-E0-vgZ"/>
+                            <constraint firstItem="PJS-Fb-cgY" firstAttribute="top" secondItem="uRq-8r-gTJ" secondAttribute="top" id="abu-7p-3Pg"/>
+                            <constraint firstAttribute="trailing" secondItem="PJS-Fb-cgY" secondAttribute="trailing" id="tvB-0P-KnH"/>
+                            <constraint firstAttribute="trailing" secondItem="uqO-Ji-g6B" secondAttribute="trailing" constant="8" id="vGv-l5-mHM"/>
+                            <constraint firstAttribute="bottom" secondItem="uqO-Ji-g6B" secondAttribute="bottom" constant="4" id="vYy-St-CPh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WpF-Pj-nkX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="73W-zB-tJg"/>
+                <constraint firstAttribute="trailing" secondItem="ExD-oM-R3c" secondAttribute="trailing" constant="8" id="IgD-ky-ckH"/>
+                <constraint firstAttribute="bottom" secondItem="ExD-oM-R3c" secondAttribute="bottom" constant="24" id="Pau-gh-fNO"/>
+                <constraint firstItem="RWQ-I9-mb2" firstAttribute="top" secondItem="ExD-oM-R3c" secondAttribute="top" constant="-8" id="T6X-1s-lvf"/>
+                <constraint firstItem="ExD-oM-R3c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="TMK-oE-Thx"/>
+                <constraint firstAttribute="bottom" secondItem="RWQ-I9-mb2" secondAttribute="bottom" id="U9N-Wl-1cg"/>
+                <constraint firstItem="WpF-Pj-nkX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aQB-Oo-k7Q"/>
+                <constraint firstItem="uRq-8r-gTJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="bax-cq-Ge0"/>
+                <constraint firstAttribute="trailing" secondItem="WpF-Pj-nkX" secondAttribute="trailing" id="fYu-F4-hZl"/>
+                <constraint firstAttribute="trailing" secondItem="RWQ-I9-mb2" secondAttribute="trailing" id="gAt-W3-EEU"/>
+                <constraint firstItem="RWQ-I9-mb2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h1w-pX-vn6"/>
+                <constraint firstAttribute="bottom" secondItem="WpF-Pj-nkX" secondAttribute="bottom" id="ytd-xe-J2U"/>
+                <constraint firstItem="RWQ-I9-mb2" firstAttribute="top" secondItem="uRq-8r-gTJ" secondAttribute="bottom" constant="4" id="zOV-aG-hFJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="314" height="321"/>
+            <connections>
+                <outlet property="blackBackground" destination="RWQ-I9-mb2" id="ijV-Cl-PeM"/>
+                <outlet property="blurBackground" destination="L52-hv-JCx" id="RU5-7L-ijp"/>
+                <outlet property="blurSeeMore" destination="PJS-Fb-cgY" id="FN4-CA-b07"/>
+                <outlet property="descriptionLabel" destination="jOk-9f-PLJ" id="QKe-1b-dPY"/>
+                <outlet property="newsImageView" destination="WpF-Pj-nkX" id="sfR-qz-Sng"/>
+                <outlet property="tapTipLabel" destination="uRq-8r-gTJ" id="lz9-NE-za9"/>
+                <outlet property="titleLabel" destination="Ygs-pE-WDY" id="g7M-Hq-wbx"/>
+            </connections>
+            <point key="canvasLocation" x="327.536231884058" y="173.10267857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

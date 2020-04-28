@@ -1,0 +1,106 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CoronaCare' do
+<<<<<<< HEAD
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # use_modular_headers!
+
+  pod 'ConcentricOnboarding'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'Hero'
+  pod 'Stellar', :git => 'https://github.com/AugustRush/Stellar.git'
+  pod 'CBFlashyTabBarController'
+  pod 'lottie-ios'
+  pod 'Permission/Notifications'
+  pod 'Permission/Location'
+  pod 'Cards'
+  pod 'SDWebImage'
+  pod 'Firebase'
+  pod 'Firebase/Crashlytics'
+pod 'BEKMultiCellTable', :git => 'https://github.com/behrad-kzm/BEKMultiCellTable.git'
+  pod 'HGCircularSlider'
+  pod 'StepSlider'
+  pod "SwiftRater"
+  pod 'SemiModalViewController'
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'Siren', :git => 'https://github.com/ArtSabintsev/Siren.git', :branch => 'swift5.0' # Swift 5.0
+
+  # Pods for CoronaCare
+  
+  target 'CoronaCareTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  target 'CoronaCareUITests' do
+   
+  end
+  
+  target 'NotificationPlatform' do
+    
+  end
+  
+  target 'LocationManager' do
+
+  end
+  target 'CoreDataPlatform' do
+
+  end
+=======
+	# Comment the next line if you don't want to use dynamic frameworks
+	use_frameworks!
+	# use_modular_headers!
+	
+	pod 'ConcentricOnboarding'
+	pod 'RxSwift'
+	pod 'RxCocoa'
+	pod 'Alamofire'
+	pod 'RxAlamofire'
+	pod 'SDWebImage', '~> 5.0'
+	pod 'Hero'
+	pod 'Stellar', :git => 'https://github.com/AugustRush/Stellar.git'
+	pod 'CBFlashyTabBarController'
+	pod 'lottie-ios'
+	pod 'Permission/Notifications'
+	pod 'Permission/Location'
+	pod 'Cards'
+	pod 'SDWebImage'
+	pod 'Firebase'
+	pod 'Crashlytics'
+	pod 'BEKMultiCellTable', :git => 'https://github.com/behrad-kzm/BEKMultiCellTable.git'
+	pod 'HGCircularSlider'
+	pod 'StepSlider'
+	pod "SwiftRater"
+	pod 'SemiModalViewController'
+	pod 'Google-Mobile-Ads-SDK'
+	pod 'Siren', :git => 'https://github.com/ArtSabintsev/Siren.git', :branch => 'swift5.0' # Swift 5.0
+	
+	# Pods for CoronaCare
+	
+	target 'CoronaCareTests' do
+		inherit! :search_paths
+		# Pods for testing
+	end
+	
+	target 'CoronaCareUITests' do
+		
+	end
+	
+	target 'NotificationPlatform' do
+		
+	end
+	
+	target 'LocationManager' do
+		
+	end
+	target 'CoreDataPlatform' do
+		
+	end
+>>>>>>> a5f957f593e858b812c8a390670e762e88b5d059
+end

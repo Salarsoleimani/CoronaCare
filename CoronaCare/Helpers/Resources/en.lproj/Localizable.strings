@@ -1,0 +1,215 @@
+/*
+  Localizable.strings
+  VirusCare
+
+  Created by Behrad Kazemi on 2/25/20.
+  Copyright © 2020 BEKApps. All rights reserved.
+*/
+
+//MARK: - Shared
+/// errors
+"ConnectionProblem" = "There is a connection problem. please check your internet connection.";
+"UnknownError" = "Something is wrong.";
+"AnErrorOccured" = "An error has occurred. Please try again.";
+"TerminationError" = "This app can't track you to notify the Safety instructions if you close it from the background process. Don't worry, we use the minimum level of your battery with our optimized structures.💡";
+/// buttons
+"OK" = "OK";
+
+//MARK: - Onboarding
+
+/// - titles
+"onboarding-title1"  = "What is Influenza?";
+"onboarding-title2"  = "What are the Symptoms?";
+"onboarding-title3"  = "Prevention & Treatment";
+"onboarding-title4"  = "Prevention & Treatment";
+"onboarding-title5"  = "Prevention & Treatment";
+"onboarding-title6"  = "Prevention & Treatment";
+"onboarding-title7"  = "Prevention & Treatment";
+"onboarding-title8"  = "Virus Care";
+"onboarding-title9"  = "Checkups";
+"onboarding-title10" = "Call a doctor";
+
+/// - headers
+"onboarding-header1"  = "Flu";
+"onboarding-header2"  = "";
+"onboarding-header3"  = "Washing hands";
+"onboarding-header4"  = "Put on a mask";
+"onboarding-header5"  = "No hand shakes!";
+"onboarding-header6"  = "Vitamin C, D";
+"onboarding-header7"  = "Cleaning & Sanitizing";
+"onboarding-header8"  = "Prevention is better than cure";
+"onboarding-header9"  = "Quick questions";
+"onboarding-header10" = "Nothing is better than a real doctor";
+
+/// - body
+"onboarding-body1" = "Influenza is a viral infection that attacks your respiratory system — your nose, throat, and lungs. Influenza is commonly called the flu, but it's not the same as stomach \"flu\" viruses that cause diarrhea and vomiting.";
+"onboarding-body2" = "Initially, the flu may seem like a common cold with a runny nose, sneezing, and sore throat. But colds usually develop slowly, whereas the flu tends to come on suddenly. And although a cold can be a nuisance, you usually feel much worse with the flu.";
+"onboarding-body3" = "Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.";
+"onboarding-body4" = "Put on a mask and avoid touching your eyes, nose, and mouth and cover your cough or sneeze with a tissue, then throw the tissue in the trash.";
+"onboarding-body5" = "Avoid close contact with people who are sick and stay home when you are sick. Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe";
+"onboarding-body6" = "A lack of vitamin C and D has been long known to increase susceptibility to viruses, and a few studies have shown that vitamin C and D deficiency is related to the increased risk and severity of influenza infections.";
+"onboarding-body7" = "If you go out for any reason, after you came back, you should clean and sanitize all the stuff from outside. for example: throw out plastic bags, sanitize your shoppings, glasses, mobile, ring, watch, shoes, handbag, wallet, ...";
+"onboarding-body8" = "The Virus Care app helps people minimize the risk of infection of any viruses and will keep you safe with regular reminders and training. It monitors your location and pushes notifications to alert you to stay healthy.";
+"onboarding-body9" = "The app will ask you to control how much you followed the instructions to help you better and provide a set of statistics based on your activities, so take the time to answer them correctly.";
+"onboarding-body10" = "Be aware! Virus care is just an app, not a doctor so call a doctor if you feel you're sick.";
+
+
+///////////////////////////////////////////////
+
+//MARK: - Events
+
+"Event_AnswerReminder_Title" = "Statistics Updated";
+"Event_AnswerReminder_Content" = "Open up the app to check the new Tips and update statistics.";
+
+"Event_HandsCare_Title" = "Washing Hands";
+"Event_HandsCare_Content" = "It's time to washing your hands now. keep in mind that, 'washing hands' is the most important activity that keeps you safe from viruses.";
+
+"Event_GlovesCare_Title" = "Wear Gloves";
+"Event_GlovesCare_Content" = "It seems you are going out. Touch less stuff and Wear gloves for more safety. 😉";
+
+"Event_MaskCare_Title" = "Wear Mask";
+"Event_MaskCare_Content" = "It seems you are going out of the defined region. Take a mask for more safety. 😷";
+
+"Event_VitaminCCare_Title" = "Vitamin C & D";
+"Event_VitaminCCare_Content" = "Boost your immune system with drinking 🍊Vitamin C and D tablet to avoid colds and viruses.";
+
+"Event_Sanitizing_Title" = "Clean your clothes";
+"Event_Sanitizing_Content" = "Sanitize everything before coming inside the house. Put any plastic bag away and Sanitize any stuff you have like the cellphone, your shopping bags, handbag, wallet, watch, ring, shoes, glasses, etc.";
+
+"All_Event_Location_Exiting_Title" = "Going out?";
+"All_Event_Location_Entering_Title" = "Just came?";
+
+///////////////////////////////////////////////
+
+//MARK: - Permissions
+
+"Skip_Title" = "Skip";
+"Notification_Permission_description" = "To help Virus Care notifies you on necessary situations. \nPlease turn on notification permission";
+"Notification_Permission_Basis_description" = "the basis of this application is notifying you, so we can't move forward unless enabling the notification permission.";
+"Location_Permission_description" = "For the better daily interaction with you and make Virus Care smarter. \nPlease turn on the location permision";
+
+"Location_Permission_Authorized_Title" = "Location permission is enabled 😉";
+"Location_Permission_Denied_Title" = "Please turn on location permission";
+
+"Notification_Permission_Authorized_Title" = "Notification permission is enabled 😊";
+"Notification_Permission_Denied_Title" = "Please turn on notification permission";
+
+///////////////////////////////////////////////
+
+//MARK: - Questions
+
+"Question_Title_Hands" = "Did you wash your hands?";
+"Question_Title_VitaminC" = "Did you drink a glass of Vitamin C?";
+"Question_Title_Gloves" = "Did you wear gloves before you go out?";
+"Question_Title_Mask" = "Did you wear a mask before you go out?";
+"Question_Title_Sanitizing" = "Did you sanitize all the stuff that you get from outside?";
+
+"Question_Title_Water" = "Did you drink a glass of water?";
+
+"Default_Question_Ignore_Button" = "No, I'm  sorry 😕";
+"Default_Question_Accept_Button" = "Yeah!";
+
+"Notification_Button_Action_Title_Snooze" = "Remind me again in %d minutes";
+"Notification_Button_Action_Title_Done" = "I did it 😍";
+
+///////////////////////////////////////////////
+
+//MARK: - Statistics
+"Statistics" = "Statistics";
+"Statistics_Title_Qoute_0" = "💡You have reduced %d%% infection risk of any viruses.";
+"Statistics_Title_Qoute_1" = "💡Infection risk reduced by %d%%.";
+"Statistics_Title_Qoute_2" = "💡In %d%%, you are immune, based on the selected prevention ways.\nTry increasing the safety level at the config page";
+"Statistics_Title_Qoute_3" = "💡You have done %d%% of the suggested instructions.";
+
+
+"Statistics_low_Quote_0" = "It's low, be aware of the next app's notification to follow the instruction. 🤭";
+"Statistics_low_Quote_1" = "Be more active at this. 😷 you may at risk of the viruses.";
+"Statistics_low_Quote_2" = "Not safe! 😤 Follow the instructions to stay immune from the viruses.";
+"Statistics_low_Quote_3" = "Seems risky... 😯";
+"Statistics_low_Quote_4" = "Come on! 😩 that's the way you keep safe from viruses.🦠";
+"Statistics_low_Quote_5" = "This app won't keep you safe until you follow the instructions...please! 😟";
+
+//----
+
+"Statistics_medium_Quote_0" = "Doing more instructions can make this perfect.";
+"Statistics_medium_Quote_1" = "'Medium' is not enough to stay immune from the risk of viruses.";
+"Statistics_medium_Quote_2" = "You need to be perfect to decrease the risk of virus infection.🖐🏼";
+"Statistics_medium_Quote_3" = "Why you are not perfect? 👊🏼";
+"Statistics_medium_Quote_4" = "If you follow more instructions you can be perfect at decreasing the risk of infection in this section.😌";
+"Statistics_medium_Quote_5" = "Next time, be perfect.☝🏼";
+
+//----
+
+"Statistics_perfect_Quote_0" = "👍🏼👍🏼👍🏼";
+"Statistics_perfect_Quote_1" = "You are a champion!👏🏻";
+"Statistics_perfect_Quote_2" = "Perfect!!🤘🏼";
+"Statistics_perfect_Quote_3" = "Stay perfect...💪🏼";
+"Statistics_perfect_Quote_4" = "👏🏻👏🏻👏🏻";
+"Statistics_perfect_Quote_5" = "Yeaaah!!🤝";
+
+
+///////////////////////////////////////////////
+
+
+////////////////////////////////
+//MARK: - Configuration
+"Save_Button_Title" = "Save";
+
+"Donate_Button_Title" = "Donate to help";
+"Restore_Purchase_Button_Title" = "Restore purchase";
+"Remove_Ads_Button_Title" = "Remove ads";
+"Donate_Description" = "Help us to improve the Virus Care app. \nIf you enjoy using the Virus Care, please donate us at least by watching a video.";
+
+
+"Language_Button_Title" = "Language";
+"Language_Button_Description" = "Please select your language.";
+
+"Default_SleepTime_Description" = "Set your sleep time in order to not receive a notification when you are asleep.";
+"Default_SaftyLevel_Description" = "Set your safety level to be safer by adding more safety scheduled notification for you.";
+"Default_BedTime_Title_Label" = "Bed time";
+"Default_WakeUpTime_Title_Label" = "Wake up time";
+
+"Basic_SaftyLevel_Title" = "careless";
+"Low_SaftyLevel_Title" = "regular";
+"Medium_SaftyLevel_Title" = "considerable";
+"High_SaftyLevel_Title" = "careful";
+"VeryHigh_SaftyLevel_Title" = "obsessive";
+
+"MaskEquipmentEvent_ConfigTitle" = "• Put on a mask when going out.";
+"GlovesEquipmentEvent_ConfigTitle" = "• Wear gloves when going out.";
+"SanitizingEvent_ConfigTitle" = "• Sanitize everything when coming home.";
+"VitaminCEvent_ConfigTitle" = "• Eat your Vitamins.";
+"HandsCareEvent_ConfigTitle" = "• Wash your hands when arrived at a safe place.";
+//"MaskEquipmentEvent_ConfigTitle" = "• The app will notify you to take a mask when going out.";
+//"GlovesEquipmentEvent_ConfigTitle" = "• The app will notify you to take gloves when going out.";
+//"SanitizingEvent_ConfigTitle" = "• The app will notify you to sanitize your hands when coming home and scheduling notifications to notify it.";
+//"VitaminCEvent_ConfigTitle" = "• The app will notify you to drink Vitamin C juice coming home.";
+//"HandsCareEvent_ConfigTitle" = "• The app will notify you to wash your hands when coming home and scheduling notifications to notify it.";
+"Snooze_Minutes" = " minutes";
+"Snooze_Minutes_Title" = "Notification Snooze Time";
+
+"Permission_Description" = "To help Virus Care be smarter and notifies you on right and necessary situations. \nPlease turn on Notification and Location permissions.";
+"Permission_Location_Title" = "Location Permission";
+"Notification_Location_Title" = "Notification Permission";
+
+"Rate_Us_Title" = "Rate us 🙂";
+"Contact_Us_Title" = "Contact us 📧";
+"Youtube_Title" = "Youtube 📺";
+"Instagram_Title" = "Instagram 📷";
+
+///////////
+/// Navigatino Titles
+
+"Configuration_Navigation_Title" = "Configuration";
+"Statistic_Navigation_Title" = "Statistics";
+"Home_Navigation_Title" = "Home";
+
+
+///////
+/// Rate
+
+"Rate_alertCancelTitle" = "Not now, thanks";
+"Rate_alertMessage" = "If you enjoy using Virus Care, would you mind taking a moment to rate it? it just takes less than a minute. it supports to encourage us to make the app more sufficient.\nThanks for your support 🙌🏾";
+"Rate_alertRateLaterTitle" = "Remind me later";
+"Rate_alertRateTitle" = "Rate Virus Care";
+"Rate_alertTitle" = "Please rate us 🙂";

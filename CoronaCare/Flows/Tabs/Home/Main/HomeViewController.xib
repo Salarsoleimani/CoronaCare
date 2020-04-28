@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Virus_Care" customModuleProvider="target">
+            <connections>
+                <outlet property="blurBackground" destination="8Zf-CO-zrx" id="Jjs-tR-N3a"/>
+                <outlet property="newsCollectionView" destination="737-Lf-buz" id="7E0-mm-8MN"/>
+                <outlet property="titleLabel" destination="dBP-DB-mq4" id="SXv-TP-dV4"/>
+                <outlet property="view" destination="x08-vO-Fej" id="vS1-jz-aEf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="x08-vO-Fej">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="737-Lf-buz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gQh-52-scI">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp2-Dv-j9O">
+                    <rect key="frame" x="16" y="52" width="123.5" height="50"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zf-CO-zrx">
+                            <rect key="frame" x="0.0" y="0.0" width="123.5" height="50"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9lR-aF-dWb">
+                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="regular"/>
+                        </visualEffectView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBP-DB-mq4">
+                            <rect key="frame" x="16" y="4" width="91.5" height="42"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8Zf-CO-zrx" secondAttribute="bottom" id="6AN-cK-jz6"/>
+                        <constraint firstAttribute="trailing" secondItem="8Zf-CO-zrx" secondAttribute="trailing" id="6rR-Zf-rWK"/>
+                        <constraint firstItem="dBP-DB-mq4" firstAttribute="trailing" secondItem="8Zf-CO-zrx" secondAttribute="trailing" constant="-16" id="IPW-tZ-bKY"/>
+                        <constraint firstItem="8Zf-CO-zrx" firstAttribute="bottom" secondItem="dBP-DB-mq4" secondAttribute="bottom" constant="4" id="WPU-es-nNd"/>
+                        <constraint firstItem="8Zf-CO-zrx" firstAttribute="leading" secondItem="xp2-Dv-j9O" secondAttribute="leading" id="aJj-U2-8jL"/>
+                        <constraint firstItem="8Zf-CO-zrx" firstAttribute="leading" secondItem="dBP-DB-mq4" secondAttribute="leading" constant="-16" id="dvv-E1-Icb"/>
+                        <constraint firstItem="8Zf-CO-zrx" firstAttribute="top" secondItem="xp2-Dv-j9O" secondAttribute="top" id="jh0-LZ-djc"/>
+                        <constraint firstItem="8Zf-CO-zrx" firstAttribute="top" secondItem="dBP-DB-mq4" secondAttribute="top" constant="-4" id="wfE-2V-gHH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="737-Lf-buz" firstAttribute="top" secondItem="x08-vO-Fej" secondAttribute="top" id="5sA-6E-KBS"/>
+                <constraint firstItem="xp2-Dv-j9O" firstAttribute="leading" secondItem="5f5-eC-kki" secondAttribute="leading" constant="16" id="6pi-nT-1t7"/>
+                <constraint firstAttribute="bottom" secondItem="737-Lf-buz" secondAttribute="bottom" id="R1R-Dx-xiN"/>
+                <constraint firstItem="737-Lf-buz" firstAttribute="trailing" secondItem="5f5-eC-kki" secondAttribute="trailing" id="Ui9-zL-ja9"/>
+                <constraint firstItem="737-Lf-buz" firstAttribute="leading" secondItem="5f5-eC-kki" secondAttribute="leading" id="eHn-UY-KLy"/>
+                <constraint firstItem="xp2-Dv-j9O" firstAttribute="top" secondItem="5f5-eC-kki" secondAttribute="top" constant="8" id="twh-Ny-YUT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5f5-eC-kki"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+</document>

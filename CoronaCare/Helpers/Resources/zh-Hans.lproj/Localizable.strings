@@ -1,0 +1,207 @@
+/*
+  Localizable.strings
+  VirusCare
+
+  Created by Behrad Kazemi on 2/25/20.
+  Copyright © 2020 BEKApps. All rights reserved.
+*/
+
+//MARK: - Shared
+/// errors
+"ConnectionProblem" = "存在连接问题。 请检查您的互联网连接。";
+"UnknownError" = "出了点问题。";
+"AnErrorOccured" = "发生了错误。 请再试一遍。";
+"TerminationError" = "如果您从后台进程关闭了该应用程序，则该应用程序将无法跟踪您通知安全说明。 不用担心，我们将电池的最低电量用于优化的结构。💡";
+/// buttons
+"OK" = "好";
+
+//MARK: - Onboarding
+
+/// - titles
+"onboarding-title1" = "什么是流感？";
+"onboarding-title2" = "有什么症状？";
+"onboarding-title3" = "预防与治疗";
+"onboarding-title4" = "预防与治疗";
+"onboarding-title5" = "预防与治疗";
+"onboarding-title6" = "预防与治疗";
+"onboarding-title7" = "预防与治疗";
+"onboarding-title8" = "Virus Care";
+"onboarding-title9" = "体检";
+"onboarding-title10" = "打电话叫医生";
+
+/// - headers
+"onboarding-header1" = "流感";
+"onboarding-header2" = "";
+"onboarding-header3" = "洗手";
+"onboarding-header4" = "戴上口罩";
+"onboarding-header5" = "不要握手！";
+"onboarding-header6" = "维生素C和D";
+"onboarding-header7"  = "清洁与消毒";
+"onboarding-header8" = "预防胜于治疗";
+"onboarding-header9" = "快速提问";
+"onboarding-header10" = "没有什么比真正的医生更好";
+
+/// - body
+"onboarding-body1" = "流感是一种病毒感染，会侵袭您的呼吸系统-您的鼻子，喉咙和肺。 流感通常称为流感，但与引起腹泻和呕吐的胃“流感”病毒不同。";
+"onboarding-body2" = "最初，流感可能看起来像是普通感冒，流鼻涕，打喷嚏和喉咙痛。 但是感冒通常会慢慢发展，而流感往往会突然发作。 尽管感冒可能会令人讨厌，但您通常会因流感而感到更糟。";
+"onboarding-body3" = "用肥皂和水洗手至少2秒钟，尤其是去洗手间后； 进食前；及清理鼻子，咳嗽或打喷嚏后。";
+"onboarding-body4" = "用餐巾覆盖并咳嗽或打喷嚏，然后将餐巾倒入垃圾桶。";
+"onboarding-body5" = "生病期间待在家里。 经常用干净的喷雾剂对物体和表面进行消毒。";
+"onboarding-body6" = "长期以来，维生素C和D的缺乏会增加对病毒的敏感性，一些研究表明，维生素C和D的缺乏与流感感染的风险和严重程度增加有关。";
+"onboarding-body7" = "如果出于任何原因外出，回来后应该从外面清洁所有东西。 例如：丢掉塑料袋，为购物，眼镜，手机，戒指，手表，鞋子等清洁卫生...";
+
+"onboarding-body8" = "Virus Care应用程序可帮助人们最大程度地减少感染任何病毒的风险，并通过定期提醒和培训来确保您的安全。 它监视您的位置并推送通知以提醒您保持健康。";
+"onboarding-body9" = "该应用程序将要求您控制按照说明进行操作的程度，以帮助您更好地工作，并根据您的活动提供一组统计信息，因此，请花点时间正确回答。";
+"onboarding-body10" = "意识到！ 病毒防护只是一个应用程序，而不是医生，如果您感到恶心，请致电医生。";
+
+
+///////////////////////////////////////////////
+
+//MARK: - Events
+"Event_AnswerReminder_Title" = "统计资料已更新";
+"Event_AnswerReminder_Content" = "打开应用程序以检查新的提示并更新统计信息。";
+
+"Event_HandsCare_Title" = "洗手";
+"Event_HandsCare_Content" = "现在该洗手了。 请记住，“洗手”是最重要的活动，可确保您免受病毒侵害。";
+
+"Event_GlovesCare_Title" = "戴手套";
+"Event_GlovesCare_Content" = "看来你要出去了 接触较少的东西，戴上手套以提高安全性。 😉";
+
+"Event_MaskCare_Title" = "戴口罩";
+"Event_MaskCare_Content" = "看来您要离开定义的区域。 戴上口罩可以提高安全性。 😷";
+
+"Event_VitaminCCare_Title" = "维生素C和D";
+"Event_VitaminCCare_Content" = "喝🍊维生素C和D片剂可增强免疫系统，避免感冒和病毒。";
+
+"Event_Sanitizing_Title" = "消毒出来的东西";
+"Event_Sanitizing_Content" = "开箱即用，如手机，所有购物，手袋，钱包，手表，戒指，鞋子，眼镜等的消毒。";
+///////////////////////////////////////////////
+
+//MARK: - Permissions
+
+"Skip_Title" = "跳跃";
+"Notification_Permission_description" = "为了让Virus Care在需要时提醒您。 \ n请允许访问提醒";
+"Notification_Permission_Basis_description"="该应用程序的基础是通知您，因此除非启用通知权限，否则我们将无法继续前进。";
+"Location_Permission_description" = "为了与您之间更好的日常互动，并使Virus Care更智能。 \n请打开位置信息权限";
+
+"Location_Permission_Authorized_Title" = "启用位置权限😉";
+"Location_Permission_Denied_Title" = "请打开位置信息权限";
+
+"Notification_Permission_Authorized_Title" = "启用通知权限😊";
+"Notification_Permission_Denied_Title" = "请开启通知权限";
+
+///////////////////////////////////////////////
+
+//MARK: - Questions
+
+"Question_Title_Hands" = "你洗手了吗？";
+"Question_Title_VitaminC" = "你喝了一杯维生素C吗？";
+"Question_Title_Gloves" = "外出前戴手套了吗？";
+"Question_Title_Mask" = "外出前戴口罩吗？";
+"Question_Title_Sanitizing" = "您是否对所有从外部获得的东西进行了消毒？";
+
+"Question_Title_Water" = "你喝了一杯水吗？";
+
+"Default_Question_Ignore_Button" = "不，我很抱歉 😕";
+"Default_Question_Accept_Button" = "是的!";
+
+"Notification_Button_Action_Title_Snooze" = "在 %d 分钟后再次提醒我";
+"Notification_Button_Action_Title_Done" = "我做到了😍";
+
+///////////////////////////////////////////////
+
+//MARK: - Statistics
+"Statistics" = "统计";
+"Statistics_Title_Qoute_0" = "💡您已将任何病毒的感染风险降低了%d%%。";
+"Statistics_Title_Qoute_1" = "💡降低感染风险 %d%%.";
+"Statistics_Title_Qoute_2" = "💡在 %d%% 中，您可以根据所选的预防方法来保持免疫。\n请尝试在配置页上提高安全级别";
+"Statistics_Title_Qoute_3" = "💡你做得 %d%% 的建议说明。";
+
+
+"Statistics_low_Quote_0" = "较低，请注意下一个应用程序的通知以按照说明进行操作。 🤭";
+"Statistics_low_Quote_1" = "对此要更加积极。 😷您可能会感染病毒。";
+"Statistics_low_Quote_2" = "不安全！ 😤请按照说明进行操作，以保持对病毒的免疫力。";
+"Statistics_low_Quote_3" = "似乎有风险...😯";
+"Statistics_low_Quote_4" = "来吧！ 😩这就是保护您免受病毒侵害的方法。🦠";
+"Statistics_low_Quote_5" = "除非您按照说明进行操作，否则此应用不会确保您的安全...请！ 😟";
+
+//----
+
+"Statistics_medium_Quote_0" = "多做一些说明可以使它变得完美。";
+"Statistics_medium_Quote_1" = "“中等”不足以保持抵抗病毒风险的能力。";
+"Statistics_medium_Quote_2" = "您需要完善以降低病毒感染的风险。🖐🏼";
+"Statistics_medium_Quote_3" = "为什么你不完美？ 👊🏼";
+"Statistics_medium_Quote_4" = "如果您按照更多的说明进行操作，则可以在本节中降低感染的风险。😌";
+"Statistics_medium_Quote_5" = "下次再完美。☝🏼";
+
+//----
+
+"Statistics_perfect_Quote_0" = "👍🏼👍🏼👍🏼";
+"Statistics_perfect_Quote_1" = "你是冠军！👏🏻";
+"Statistics_perfect_Quote_2" = "完美!!🤘🏼";
+"Statistics_perfect_Quote_3" = "保持完美...💪🏼";
+"Statistics_perfect_Quote_4" = "👏🏻👏🏻👏🏻";
+"Statistics_perfect_Quote_5" = "是的！🤝";
+
+
+///////////////////////////////////////////////
+
+
+////////////////////////////////
+//MARK: - Configuration
+"Save_Button_Title" = "保存到";
+
+"Donate_Button_Title" = "捐款帮助";
+"Restore_Purchase_Button_Title" = "恢复购买";
+"Remove_Ads_Button_Title" = "移除广告";
+"Donate_Description" = "帮助我们改善Virus Care应用程序。 \ n如果您喜欢使用Virus Care，请至少通过观看视频向我们捐款。";
+
+
+"Language_Button_Title" = "语言";
+"Language_Button_Description" = "请选择您的语言。";
+
+"Default_SleepTime_Description" = "设置睡眠时间，以便在睡眠时不接收通知。";
+"Default_SaftyLevel_Description" = "通过为您添加更多安全计划通知，将您的安全级别设置为更安全。";
+"Default_BedTime_Title_Label" = "上床时间";
+"Default_WakeUpTime_Title_Label" = "叫醒时间";
+
+"Basic_SaftyLevel_Title" = "粗心";
+"Low_SaftyLevel_Title" = "定期";
+"Medium_SaftyLevel_Title" = "大量";
+"High_SaftyLevel_Title" = "小心";
+"VeryHigh_SaftyLevel_Title" = "痴迷";
+
+"MaskEquipmentEvent_ConfigTitle" = "• 外出时戴上口罩。";
+"GlovesEquipmentEvent_ConfigTitle" = "• 外出时戴手套。";
+"SanitizingEvent_ConfigTitle" = "• 回家时消毒所有东西。";
+"VitaminCEvent_ConfigTitle" = "• 吃你的维生素。";
+"HandsCareEvent_ConfigTitle" = "• 到达安全地点后要洗手。";
+"Snooze_Minutes" = " 分钟";
+"Snooze_Minutes_Title" = "通知暂停时间";
+
+"Permission_Description" = "为了帮助Virus Care变得更聪明，并在适当和必要的情况下通知您。\n请打开通知和位置权限。";
+"Permission_Location_Title" = "位置权限";
+"Notification_Location_Title" = "通知权限";
+
+"Rate_Us_Title" = "评价我们🙂";
+"Contact_Us_Title" = "联系我们📧";
+"Youtube_Title" = "Youtube 📺";
+"Instagram_Title" = "Instagram 📷";
+
+///////////
+/// Navigatino Titles
+
+"Configuration_Navigation_Title" = "设置";
+"Statistic_Navigation_Title" = "统计";
+"Home_Navigation_Title" = "家";
+
+
+///////
+/// Rate
+
+"Rate_alertCancelTitle" = "不是现在，谢谢";
+"Rate_alertMessage" = "如果您喜欢使用Virus Care，您会花一点时间对其进行评分吗？ 只需不到一分钟。 它支持鼓励我们使应用程序变得更充分。\n感谢您的支持 🙌🏾";
+"Rate_alertRateLaterTitle" = "稍后提醒我";
+"Rate_alertRateTitle" = "评价电晕护理";
+"Rate_alertTitle" = "请给我们打分 🙂";
+

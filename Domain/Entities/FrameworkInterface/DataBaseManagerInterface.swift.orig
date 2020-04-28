@@ -1,0 +1,35 @@
+//
+//  DataBaseManagerInterface.swift
+//  Domain
+//
+//  Created by Behrad Kazemi on 3/6/20.
+//  Copyright © 2020 BEKApps. All rights reserved.
+//
+
+import Foundation
+
+<<<<<<< HEAD
+public protocol DataBaseManagerInterface {
+  func getNotificationModels(forEvent event: EventTypeId) -> [NotificationLog]
+  func getConfiguration(forEvent event: EventTypeId) -> EventConfiguration?
+  func getLocationLogs(withPrediction prediction: NSPredicate) -> [LocationLog]
+  func getUserInfo() -> UserInfo?
+  func update(Configuration configuration: EventConfiguration, completion: (Bool)->())
+  func update(UserInfo info: UserInfo, completion: (Bool)->())
+  func log(Location location: LocationLog, completion: (Bool)->())
+  func log(Notification notification: NotificationLog, completion: (Bool)->())
+  
+  
+=======
+public protocol DataBaseManagerInterface: ResetableFrameworkProtocol {
+  func getNotificationModels(forEvent event: EventProtocol, response: ([SimpleNotificationModel]) -> Void)
+  func getRegionConfigurations(response: ([RegionConfigurationModel]) -> Void)
+  func getLocationLogs(withPrediction prediction: NSPredicate, response: ([LocationLogModel])-> Void)
+  func getUserInfo(response: (UserInfoModel) -> Void)
+  func set(answer: AnswerType, forEvent event: EventProtocol, completion: ((Bool) -> Void)?)
+  func update(RegionConfiguration configuration: RegionConfigurationModel, completion: ((Bool) -> Void)?)
+  func update(UserInfo info: UserInfoModel, completion: ((Bool) -> Void)?)
+  func log(Location location: LocationLogModel, completion: ((Bool) -> Void)?)
+  func log(Notification notification: NotificationLogModel, completion: ((Bool) -> Void)?)
+>>>>>>> d8d163e7047e7ec42f1d802c6ffefdfc1342ab05
+}

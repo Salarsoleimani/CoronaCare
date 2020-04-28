@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>377608644169-rnoh9t55j5l06l0hn38a7p45pra7rb2k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.377608644169-rnoh9t55j5l06l0hn38a7p45pra7rb2k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5AON2NBqJYR1Oo35o-XtSpu25YSyi4p8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>377608644169</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.beksas.virusCareApp</string>
+	<key>PROJECT_ID</key>
+	<string>virus-care</string>
+	<key>STORAGE_BUCKET</key>
+	<string>virus-care.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:377608644169:ios:0ab7f62cba81e74e888198</string>
+	<key>DATABASE_URL</key>
+	<string>https://virus-care.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5525602383489545~3420186637</string>
+</dict>
+</plist>

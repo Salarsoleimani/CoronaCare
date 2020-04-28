@@ -1,0 +1,157 @@
+/* 
+  Localizable.strings
+  CoronaCare
+
+  Created by Behrad Kazemi on 2/25/20.
+  Copyright © 2020 BEKApps. All rights reserved.
+*/
+//MARK: - Onboarding
+
+/// - titles
+"onboarding-title1" = "What is Corona?";
+"onboarding-title2" = "What are the Symptoms?";
+"onboarding-title3" = "Prevention & Treatment";
+"onboarding-title4" = "Prevention & Treatment";
+"onboarding-title5" = "Prevention & Treatment";
+"onboarding-title6" = "Prevention & Treatment";
+"onboarding-title7" = "Corona Care";
+"onboarding-title8" = "Checkups";
+"onboarding-title9" = "Visit a doctor";
+
+/// - headers
+"onboarding-header1" = "COVID-19";
+"onboarding-header2" = "";
+"onboarding-header3" = "Washing hands";
+"onboarding-header4" = "Put on a mask";
+"onboarding-header5" = "No hand shakes!";
+"onboarding-header6" = "Vitamin C";
+"onboarding-header7" = "Prevention is better than cure";
+"onboarding-header8" = "Quick questions";
+"onboarding-header9" = "Nothing is better than a real doctor";
+
+/// - body
+"onboarding-body1" = "Corona is a virus that is highly contagious and dangerous and in many cases can lead to the death of the patient. Corona Care app is going to help you to keep you safe from this virus.";
+"onboarding-body2" = "In the most common case, the virus can cause colds, but in some cases it can cause acute respiratory syndrome, or SARS. Symptoms of the virus in humans are fever, cough and shortness of breath.";
+"onboarding-body3" = "Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.";
+"onboarding-body4" = "Put on a mask and avoid touching your eyes, nose, and mouth and cover your cough or sneeze with a tissue, then throw the tissue in the trash.";
+"onboarding-body5" = "Avoid close contact with people who are sick and stay home when you are sick. Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe";
+"onboarding-body6" = "A lack of vitamin C has been long known to increase susceptibility to viruses, and a few studies have shown that vitamin C deficiency is related to the increased risk and severity of influenza infections.";
+"onboarding-body7" = "The Corona Care app helps people minimize the risk of the new coronavirus and will keep you safe with regular reminders and training. It monitors your location and pushes notifications to alert you to stay healthy.";
+"onboarding-body8" = "The app will ask you to control how much you followed the instructions to help you better and provide a set of statistics based on your activities so take time to answer them correctly.";
+"onboarding-body9" = "Be aware! Corona care is just an app, not a doctor so visit a doctor if you feel you're sick.";
+
+
+///////////////////////////////////////////////
+
+//MARK: - Events
+
+"Event_HandsCare_Title" = "Washing Hands";
+"Event_HandsCare_Content" = "It's time to washing your hands now. keep in mind that, 'washing the hands' is the most important activity that keeps you safe from the new coronavirus.";
+
+"Event_GlovesCare_Title" = "Wear Gloves";
+"Event_GlovesCare_Content" = "It seems you are going out. Touch less thing and Wear gloves for more safty. 😉";
+
+"Event_MaskCare_Title" = "Wear Mask";
+"Event_MaskCare_Content" = "It seems you are going out of the defined region. Take a mask for more safty. 😷";
+
+"Event_VitaminCCare_Title" = "Vitamin C";
+"Event_VitaminCCare_Content" = "Boost your immune system with drinking 🍊Vitamin C to avoid colds and coronavirus.";
+
+"Event_Sanitizing_Title" = "Sanitizing Stuff From Outside";
+"Event_Sanitizing_Content" = "Now you are in the safe place. please throw out all the plastic bag and sanitize all the stuff that came from outdoor like your cellphone, all your shops, handbag, wallet, watch, ring, shoes, glasses, ...";
+///////////////////////////////////////////////
+
+//MARK: - Permissions
+
+
+///////////////////////////////////////////////
+
+//MARK: - Questions
+
+"Question_Title_Hands" = "Did you wash your hands?";
+"Question_Title_VitaminC" = "Did you drink a glass of Vitamin C?";
+"Question_Title_Gloves" = "Did you wear gloves before you going out?";
+"Question_Title_Mask" = "Did you wear a mask before you going out?";
+"Question_Title_Sanitizing" = "Did you sanitize all the stuff that you get from outside?";
+
+"Question_Title_Water" = "Did you drink a glass of water?";
+
+"Default_Question_Ignore_Button" = "No I'm  sorry :(";
+"Default_Question_Accept_Button" = "Yeah!";
+
+"Notification_Button_Action_Title_Snooze" = "Remind me again in %d minutes";
+"Notification_Button_Action_Title_Done" = "I did it 😍";
+
+///////////////////////////////////////////////
+
+//MARK: - Statistics
+"Statistics" = "Statistics";
+"Statistics_Title_Qoute_0" = "💡You have reduced %d%% infection risk of the new coronavirus.";
+"Statistics_Title_Qoute_1" = "💡Infection risk reduced %d%%.";
+"Statistics_Title_Qoute_2" = "💡In %d%%, you are immune, based on the selected prevention ways.\nTry increasing the safety level at the config page";
+"Statistics_Title_Qoute_3" = "💡You have done %d%% of suggested instructions.";
+
+
+"Statistics_low_Quote_0" = "It's low, be aware of the next app's notification to follow the instruction. 🤭";
+"Statistics_low_Quote_1" = "Be more active at this. 😷 you may at risk of coronavirus.";
+"Statistics_low_Quote_2" = "Not safe! 😤 Follow the instructions to stay immune from the new coronavirus.";
+"Statistics_low_Quote_3" = "Seems risky... 😯";
+"Statistics_low_Quote_4" = "Come on! 😩 that's the way you keep safe from coronavirus.🦠";
+"Statistics_low_Quote_5" = "This app won't keep you safe until you follow the instructions...please! 😟";
+
+//----
+
+"Statistics_medium_Quote_0" = "Doing more instructions can make this perfect.";
+"Statistics_medium_Quote_1" = "Medium is not enough to stay immune from the risk of coronavirus.";
+"Statistics_medium_Quote_2" = "You need to be perfect to decrease the risk of coronavirus infection.🖐🏼";
+"Statistics_medium_Quote_3" = "Why you are not perfect? 👊🏼";
+"Statistics_medium_Quote_4" = "If you follow more instructions you can be perfect at decreasing the risk of infection in this section.😌";
+"Statistics_medium_Quote_5" = "Next time be perfect.☝🏼";
+
+//----
+
+"Statistics_perfect_Quote_0" = "👍🏼👍🏼👍🏼";
+"Statistics_perfect_Quote_1" = "You are a champion!👏🏻";
+"Statistics_perfect_Quote_2" = "Perfect!!🤘🏼";
+"Statistics_perfect_Quote_3" = "Stay perfect...💪🏼";
+"Statistics_perfect_Quote_4" = "👏🏻👏🏻👏🏻";
+"Statistics_perfect_Quote_5" = "Yeaaah!!🤝";
+
+
+///////////////////////////////////////////////
+
+
+////////////////////////////////
+//MARK: - Configuration
+
+"Language_Button_Title" = "Language";
+"Language_Button_Description" = "Please select your language.";
+
+"Default_SleepTime_Description" = "Set your sleep time in order to not recieve notification when you are asleep.";
+"Default_SaftyLevel_Description" = "Set your safty level to be more safe by adding more safty scheduled notification for you.";
+"Default_BedTime_Title_Label" = "Bed time";
+"Default_WakeUpTime_Title_Label" = "Wake up time";
+
+"Basic_SaftyLevel_Title" = "good";
+"Low_SaftyLevel_Title" = "minimum";
+"Medium_SaftyLevel_Title" = "awsome";
+"High_SaftyLevel_Title" = "high";
+"VeryHigh_SaftyLevel_Title" = "obsessive";
+
+<<<<<<< HEAD
+"MaskEquipmentEvent_ConfigTitle" = "The app will notify you to take a mask when going out.";
+"GlovesEquipmentEvent_ConfigTitle" = "The app will notify you to take gloves when going out.";
+"SanitizingEvent_ConfigTitle" = "The app will notify you to sanitize your hands when coming home and scheduling notifications to notify it.";
+"VitaminCEvent_ConfigTitle" = "The app will notify you to drink Vitamin C juice coming home.";
+"HandsCareEvent_ConfigTitle" = "The app will notify you to wash your hands when coming home and scheduling notifications to notify it.";
+=======
+"MaskEquipmentEvent_ConfigTitle" = "Put your mask on";
+"GlovesEquipmentEvent_ConfigTitle" = "Wear your gloves";
+"SanitizingEvent_ConfigTitle" = "Sanitizing your stuffs";
+"VitamineCEvent_ConfigTitle" = "Eat Vitamin C";
+"HandsCareEvent_ConfigTitle" = "Wash your hands";
+>>>>>>> b92c3dd528485e59a06487fc9e273c1b68358e5c
+
+"Snooze_Minutes" = " minutes";
+"Snooze_Minutes_Title" = "Notification Snooze Time";
+

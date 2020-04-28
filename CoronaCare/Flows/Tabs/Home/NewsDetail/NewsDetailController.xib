@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailController" customModule="CoronaCare" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="Zh8-0d-DEe" id="fql-k8-F41"/>
+                <outlet property="imageBackgroundContainer" destination="BzP-6k-Qev" id="KX4-d4-DzG"/>
+                <outlet property="mainScrollView" destination="IhP-1i-Pvj" id="Uub-Z0-CcV"/>
+                <outlet property="newsDescriptionLabel" destination="FHb-7Z-giJ" id="2az-kR-Sdx"/>
+                <outlet property="newsImageView" destination="Xeo-vd-HWO" id="heH-Sb-NpM"/>
+                <outlet property="newsTitleLabel" destination="PMY-P4-eJr" id="BnD-ff-XCC"/>
+                <outlet property="seeMoreContainer" destination="jEl-fW-rAu" id="Ua6-2q-ESu"/>
+                <outlet property="seeMoreShadowContainer" destination="O0M-cB-QEG" id="c5d-b7-cbl"/>
+                <outlet property="view" destination="YMO-gv-EzA" id="xSH-9m-r6J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YMO-gv-EzA">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="IhP-1i-Pvj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5MZ-0U-F8C">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="422.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzP-6k-Qev">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="228.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-vd-HWO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="228.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Xeo-vd-HWO" secondAttribute="height" multiplier="1.4:1" id="qVK-7O-c7X"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Xeo-vd-HWO" secondAttribute="trailing" id="NpA-NH-GuM"/>
+                                        <constraint firstItem="Xeo-vd-HWO" firstAttribute="top" secondItem="BzP-6k-Qev" secondAttribute="top" id="cPM-15-2Ic"/>
+                                        <constraint firstItem="Xeo-vd-HWO" firstAttribute="leading" secondItem="BzP-6k-Qev" secondAttribute="leading" id="ePj-J1-DGU"/>
+                                        <constraint firstAttribute="bottom" secondItem="Xeo-vd-HWO" secondAttribute="bottom" id="gS1-71-TqI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6e-Oq-NWM">
+                                    <rect key="frame" x="0.0" y="244.5" width="320" height="178"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-OP-FdJ">
+                                            <rect key="frame" x="16" y="8" width="288" height="138"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="title asd" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMY-P4-eJr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="288" height="62.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="newsTitle"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="999" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-0d-DEe">
+                                                    <rect key="frame" x="0.0" y="78.5" width="288" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="998" text="sf" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-7Z-giJ">
+                                                    <rect key="frame" x="0.0" y="117.5" width="288" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="newsDesc"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="CDR-OP-FdJ" firstAttribute="leading" secondItem="P6e-Oq-NWM" secondAttribute="leading" constant="16" id="2Ip-op-UKc"/>
+                                        <constraint firstItem="CDR-OP-FdJ" firstAttribute="top" secondItem="P6e-Oq-NWM" secondAttribute="top" constant="8" id="gTQ-oS-auy"/>
+                                        <constraint firstAttribute="trailing" secondItem="CDR-OP-FdJ" secondAttribute="trailing" constant="16" id="pj5-B8-gYa"/>
+                                        <constraint firstAttribute="bottom" secondItem="CDR-OP-FdJ" secondAttribute="bottom" constant="32" id="yvd-aO-qEy"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="newsTitle"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5MZ-0U-F8C" secondAttribute="bottom" id="3KZ-fZ-BV0"/>
+                        <constraint firstItem="5MZ-0U-F8C" firstAttribute="centerX" secondItem="IhP-1i-Pvj" secondAttribute="centerX" id="AJZ-Cz-7GU"/>
+                        <constraint firstAttribute="trailing" secondItem="5MZ-0U-F8C" secondAttribute="trailing" id="H2O-v3-vGc"/>
+                        <constraint firstItem="5MZ-0U-F8C" firstAttribute="top" secondItem="IhP-1i-Pvj" secondAttribute="top" id="OdS-P4-qzg"/>
+                        <constraint firstItem="5MZ-0U-F8C" firstAttribute="leading" secondItem="IhP-1i-Pvj" secondAttribute="leading" id="Q8t-1B-pGj"/>
+                    </constraints>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="128"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xif-3i-xJ8" customClass="UIButtonX" customModule="CoronaCare" customModuleProvider="target">
+                    <rect key="frame" x="273" y="12" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="CtZ-tD-zwM"/>
+                        <constraint firstAttribute="width" constant="35" id="K2Q-Na-Oeo"/>
+                    </constraints>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="mEF-Tf-Nnd"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-cB-QEG">
+                    <rect key="frame" x="38" y="502" width="244" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEl-fW-rAu">
+                    <rect key="frame" x="38" y="502" width="244" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Open Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-yC-O9d">
+                            <rect key="frame" x="64" y="14.5" width="116" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.35686274509803922" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="e4a-yC-O9d" firstAttribute="leading" secondItem="jEl-fW-rAu" secondAttribute="leading" constant="64" id="Iy6-R7-b3h"/>
+                        <constraint firstItem="e4a-yC-O9d" firstAttribute="centerX" secondItem="jEl-fW-rAu" secondAttribute="centerX" id="TrR-4T-f5M"/>
+                        <constraint firstAttribute="height" constant="50" id="cnX-l8-ZxV"/>
+                        <constraint firstAttribute="trailing" secondItem="e4a-yC-O9d" secondAttribute="trailing" constant="64" id="sQb-np-cx2"/>
+                        <constraint firstItem="e4a-yC-O9d" firstAttribute="centerY" secondItem="jEl-fW-rAu" secondAttribute="centerY" id="vt1-Nr-OlZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-Pv-JWL">
+                    <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                    <connections>
+                        <action selector="seeMore:" destination="-1" eventType="touchUpInside" id="Dxh-xN-EDs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="jEl-fW-rAu" firstAttribute="centerX" secondItem="tdu-d9-0p0" secondAttribute="centerX" id="1Sd-IA-e9a"/>
+                <constraint firstItem="O0M-cB-QEG" firstAttribute="top" secondItem="jEl-fW-rAu" secondAttribute="top" id="Coj-Qf-CDI"/>
+                <constraint firstItem="IhP-1i-Pvj" firstAttribute="leading" secondItem="tdu-d9-0p0" secondAttribute="leading" id="G5m-K0-prw"/>
+                <constraint firstItem="IhP-1i-Pvj" firstAttribute="top" secondItem="YMO-gv-EzA" secondAttribute="top" id="GeJ-zM-bMz"/>
+                <constraint firstAttribute="bottom" secondItem="IhP-1i-Pvj" secondAttribute="bottom" id="JFh-BS-gse"/>
+                <constraint firstItem="tdu-d9-0p0" firstAttribute="trailing" secondItem="Xif-3i-xJ8" secondAttribute="trailing" constant="12" id="NXs-5z-0es"/>
+                <constraint firstItem="xRm-Pv-JWL" firstAttribute="top" secondItem="jEl-fW-rAu" secondAttribute="top" id="S42-50-lom"/>
+                <constraint firstItem="tdu-d9-0p0" firstAttribute="bottom" secondItem="jEl-fW-rAu" secondAttribute="bottom" constant="16" id="Udv-cP-RCG"/>
+                <constraint firstItem="xRm-Pv-JWL" firstAttribute="bottom" secondItem="YMO-gv-EzA" secondAttribute="bottom" id="Yw8-J5-5UB"/>
+                <constraint firstItem="O0M-cB-QEG" firstAttribute="bottom" secondItem="jEl-fW-rAu" secondAttribute="bottom" id="bAJ-Mb-haQ"/>
+                <constraint firstItem="xRm-Pv-JWL" firstAttribute="leading" secondItem="tdu-d9-0p0" secondAttribute="leading" id="e9I-x2-6yb"/>
+                <constraint firstItem="O0M-cB-QEG" firstAttribute="trailing" secondItem="jEl-fW-rAu" secondAttribute="trailing" id="ft1-jg-StY"/>
+                <constraint firstItem="tdu-d9-0p0" firstAttribute="trailing" secondItem="xRm-Pv-JWL" secondAttribute="trailing" id="gxa-YP-ON6"/>
+                <constraint firstItem="5MZ-0U-F8C" firstAttribute="width" secondItem="YMO-gv-EzA" secondAttribute="width" id="isN-fw-M8e"/>
+                <constraint firstItem="tdu-d9-0p0" firstAttribute="trailing" secondItem="IhP-1i-Pvj" secondAttribute="trailing" id="tuO-b1-6e0"/>
+                <constraint firstItem="Xif-3i-xJ8" firstAttribute="top" secondItem="tdu-d9-0p0" secondAttribute="top" constant="12" id="w04-Vi-9nR"/>
+                <constraint firstItem="O0M-cB-QEG" firstAttribute="leading" secondItem="jEl-fW-rAu" secondAttribute="leading" id="xI7-Bm-hbE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tdu-d9-0p0"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-572.46376811594212" y="61.607142857142854"/>
+        </view>
+    </objects>
+</document>

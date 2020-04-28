@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationPermissionViewController" customModule="CoronaCare" customModuleProvider="target">
+            <connections>
+                <outlet property="locPermissionDescription" destination="Jon-He-WHP" id="v6k-cY-58U"/>
+                <outlet property="locationLottieView" destination="B6U-Qz-Ixf" id="tj9-8X-xPC"/>
+                <outlet property="locationPermissionButton" destination="kpv-sD-gIe" id="KrM-tD-lf9"/>
+                <outlet property="skipButton" destination="Ow4-dr-Hbo" id="Iue-ZO-IBB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-sD-gIe" customClass="UIButtonX" customModule="CoronaCare" customModuleProvider="target">
+                    <rect key="frame" x="32" y="792" width="350" height="50"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.8901960784313725" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="z2Y-v9-UZh"/>
+                    </constraints>
+                    <state key="normal" title="Turn on location permision">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="animateDelay">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.34000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" cocoaTouchSystemColor="lightTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="1" height="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="locationButtonPressed:" destination="-1" eventType="touchUpInside" id="Jp2-YV-Cmw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow4-dr-Hbo">
+                    <rect key="frame" x="364" y="64" width="30" height="30"/>
+                    <state key="normal" title="Skip"/>
+                    <connections>
+                        <action selector="skipButtonPressed:" destination="-1" eventType="touchUpInside" id="3Fl-Hi-V7b"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6U-Qz-Ixf" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="16.5" y="114" width="381" height="231"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="B6U-Qz-Ixf" secondAttribute="height" multiplier="1.65:1" id="Vcr-aO-9zb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jon-He-WHP">
+                    <rect key="frame" x="0.0" y="357" width="414" height="38.5"/>
+                    <string key="text">For the best daily interaction with you 
+please turn on the location permision</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ow4-dr-Hbo" secondAttribute="trailing" constant="20" id="MmI-n1-HFj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kpv-sD-gIe" secondAttribute="bottom" constant="20" id="Q5e-GC-cpy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kpv-sD-gIe" secondAttribute="trailing" constant="32" id="SEe-Os-e52"/>
+                <constraint firstItem="B6U-Qz-Ixf" firstAttribute="top" secondItem="Ow4-dr-Hbo" secondAttribute="bottom" constant="20" id="TTx-s5-q3V"/>
+                <constraint firstItem="Ow4-dr-Hbo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="YkU-06-nu6"/>
+                <constraint firstItem="Jon-He-WHP" firstAttribute="top" secondItem="B6U-Qz-Ixf" secondAttribute="bottom" constant="12" id="dTW-5c-R0v"/>
+                <constraint firstItem="Jon-He-WHP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kMC-6T-Pl6"/>
+                <constraint firstItem="kpv-sD-gIe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="kNk-Ux-CMq"/>
+                <constraint firstItem="B6U-Qz-Ixf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pPe-9Y-dnN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jon-He-WHP" secondAttribute="trailing" constant="20" id="pcV-0x-E5T"/>
+                <constraint firstItem="B6U-Qz-Ixf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.92" id="zIS-sT-Zx5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="141" y="135"/>
+        </view>
+    </objects>
+</document>

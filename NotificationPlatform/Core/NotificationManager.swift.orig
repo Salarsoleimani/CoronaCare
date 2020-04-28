@@ -1,0 +1,141 @@
+//
+//  NotificationManager.swift
+//  NotificationPlatform
+//
+//  Created by Salar Soleimani on 2020-03-04.
+//  Copyright © 2020 BEKApps. All rights reserved.
+//
+
+import Domain
+import DLLocalNotifications
+
+public class NotificationManager: NSObject, NotificationManagerInterface {
+  
+  public static let shared: NotificationManagerInterface =  {
+    return NotificationManager()
+  }()
+  
+  let sleepTimeStart = UserDefaults.standard.object(forKey: "com.storageKey.sleepTimeStart") as? Date
+  let sleepTimeFinish = UserDefaults.standard.object(forKey: "com.storageKey.sleepTimeFinish") as? Date
+  
+  public func set(event: EventProtocol, configuration: ScheduledNotificationConfigModel) {
+    //[TODO] use the configuration for schedualing
+    switch event.asEventType() {
+    case let .hands(extractedModel):
+      
+      let categoryName = String(extractedModel.asEventType().id().rawValue)
+      let soundName = categoryName + ".wav"
+      let repeatedSeconds = TimeInterval(3600) //[TODO] -Force
+      add(notificationSetting: extractedModel, repeatedSeconds: repeatedSeconds, category: categoryName, soundName: soundName)
+      //extractedModel is now an object of HandsCareEvent()
+      break
+    case let .vitamineC(extractedModel):
+      //extractedModel is now an object of VitamineCEvent()
+      let categoryName = String(extractedModel.asEventType().id().rawValue)
+      let soundName = categoryName + ".wav"
+      let repeatedSeconds = TimeInterval(7000) //[TODO] -Force
+      add(notificationSetting: extractedModel, repeatedSeconds: repeatedSeconds, category: categoryName, soundName: soundName)
+      break
+    case let .mask(extractedModel):
+      //extractedModel is now an object of MaskEquipmentEvent()
+      let categoryName = String(extractedModel.asEventType().id().rawValue)
+      let soundName = categoryName + ".wav"
+      let repeatedSeconds = TimeInterval(5) //[TODO] -Force
+      add(notificationSetting: extractedModel, repeatedSeconds: repeatedSeconds, category: categoryName, soundName: soundName)
+      break
+    case let .gloves(extractedModel):
+      //extractedModel is now an object of GlovesEquipmentEvent()
+      
+      let categoryName = String(extractedModel.asEventType().id().rawValue)
+      let soundName = categoryName + ".wav"
+      let repeatedSeconds = TimeInterval(6900) //[TODO] -Force
+      add(notificationSetting: extractedModel, repeatedSeconds: repeatedSeconds, category: categoryName, soundName: soundName)
+      break
+    }
+  }
+  public func remove(event: EventProtocol){
+    //[TODO]
+  }
+  public func upNextNotifications(forEvent event: EventProtocol, response: ([SimpleNotificationModel]) -> Void) {
+    //[TODO]
+    response([SimpleNotificationModel]())
+  }
+  
+  private func add(notificationSetting: EventProtocol, repeatedSeconds: TimeInterval, category: String, soundName: String) {
+    
+    let scheduler = DLNotificationScheduler() // [TODO] -force should I remove the scheduled notifications first?
+    
+    scheduler.repeatsFromToDate(identifier: UUID().uuidString, alertTitle: notificationSetting.title, alertBody: notificationSetting.instruction, fromDate: (sleepTimeFinish ?? Date()).addingTimeInterval(15), toDate: (sleepTimeStart ?? Date()).addingTimeInterval(300) , interval: repeatedSeconds, repeats: .daily, category: category, sound: soundName)
+    
+    let standingCategory = DLCategory(categoryIdentifier: category)
+    standingCategory.addActionButton(identifier: "Snooze", title: "2 min Snooze")
+    standingCategory.addActionButton(identifier: "Done", title: "I've Done")
+    
+    scheduler.scheduleCategories(categories: [standingCategory])
+    
+    
+    scheduler.scheduleAllNotifications()
+//    let notificaitonIDs = Query.GetNotifications(withEventID: EventProtocol.id)
+//    scheduler.getScheduledNotifications { (items) in
+//      if let safeItems = items{
+//        safeItems.filter { (notif) -> Bool in
+//          notificaitonIDs.contains(notif.identifier)
+//        }
+//      }
+//    }
+    
+  }
+  
+  public func push(notification: SimpleNotificationModel) {
+    let scheduler = DLNotificationScheduler()
+    let categoryName = String(notification.eventType.id().rawValue)
+    let soundName = categoryName + ".wav"
+    
+    for i in  1...notification.repeatCount {
+      let repeatedCount = TimeInterval(i + 1)
+      let dlNotification = DLNotification(identifier: UUID().uuidString, alertTitle: notification.title, alertBody: notification.body, date: notification.fireDate.addingTimeInterval(repeatedCount), repeats: .none, soundName: soundName)
+      dlNotification.category = categoryName
+      do {
+        guard let imageUrl = Bundle.main.url(forResource: categoryName, withExtension: "png") else { return }
+        let attachement = try UNNotificationAttachment(identifier: "image", url: imageUrl, options: nil)
+        dlNotification.attachments = [attachement]
+      } catch let err {
+        print("Error on adding image attachment to notification: \(err)")
+      }
+      
+      scheduler.scheduleNotification(notification: dlNotification) // [TODO] -Force add soundNames
+    }
+    
+    let standingCategory = DLCategory(categoryIdentifier: categoryName)
+    standingCategory.addActionButton(identifier: "Snooze", title: "2 min Snooze")
+    standingCategory.addActionButton(identifier: "Done", title: "I've Done")
+    scheduler.scheduleCategories(categories: [standingCategory])
+    
+    scheduler.scheduleAllNotifications()
+  }
+}
+<<<<<<< HEAD
+=======
+
+extension NotificationManager: ResetableFrameworkProtocol{
+  public func resetFactory() {
+    //[TODO] -force
+  }
+}
+
+extension EventType {
+  func toString() -> String {
+    switch self {
+    case .hands(_):
+      return "hands"
+    case .vitamineC(_):
+      return "vitamin c"
+    case .mask(_):
+      return "mask"
+    case .gloves(_):
+      return "gloves"
+    }
+  }
+}
+
+>>>>>>> d8d163e7047e7ec42f1d802c6ffefdfc1342ab05
